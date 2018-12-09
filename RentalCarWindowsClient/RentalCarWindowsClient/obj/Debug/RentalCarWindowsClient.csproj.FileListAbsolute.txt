@@ -1,0 +1,10 @@
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\bin\Debug\RentalCarWindowsClient.exe.config
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\bin\Debug\RentalCarWindowsClient.exe
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\bin\Debug\RentalCarWindowsClient.pdb
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\obj\Debug\RentalCarWindowsClient.csprojAssemblyReference.cache
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\obj\Debug\RentalCarWindowsClient.Form1.resources
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\obj\Debug\RentalCarWindowsClient.Properties.Resources.resources
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\obj\Debug\RentalCarWindowsClient.csproj.GenerateResource.cache
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\obj\Debug\RentalCarWindowsClient.csproj.CoreCompileInputs.cache
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\obj\Debug\RentalCarWindowsClient.exe
+C:\Users\Sonny\source\repos\WCFProject\WCFProjectWindowsClient\RentalCarWindowsClient\RentalCarWindowsClient\obj\Debug\RentalCarWindowsClient.pdb
