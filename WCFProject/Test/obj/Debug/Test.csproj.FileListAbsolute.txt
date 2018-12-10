@@ -1,0 +1,16 @@
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\Test.exe.config
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\Test.exe
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\Test.pdb
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\BL.dll
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\DAL.dll
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\Dapper.dll
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\Domain.dll
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\BL.pdb
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\DAL.pdb
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\Domain.pdb
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\bin\Debug\Dapper.xml
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\obj\Debug\Test.exe
+C:\Users\Sonny\source\repos\WCFProject\WCFProject\Test\obj\Debug\Test.pdb
