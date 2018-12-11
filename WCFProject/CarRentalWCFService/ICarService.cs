@@ -25,5 +25,11 @@ namespace CarRentalWCFService
 
         [OperationContract]
         void UpdateCustomer(Customer customer);
+
+        [OperationContract]
+        void CreateBooking(Booking booking);
+
+        [OperationContract]
+        void RemoveBooking(Booking booking);
     }
 }

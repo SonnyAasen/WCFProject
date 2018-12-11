@@ -81,6 +81,38 @@ namespace CarRentalWCFService
             customerService.Update(newCustomer);
         }
 
+        public void CreateBooking(Booking booking)
+        {
+            BookingMethods bookingService = new BookingMethods();
 
+            var newBooking = new Domain.Booking
+            {
+                Id = booking.Id,
+                CarId = booking.CarId,
+                CustomerId = booking.CustomerId,
+                FromDate = booking.FromDate,
+                ToDate = booking.ToDate,
+                IsReturned = booking.IsReturned
+            };
+
+
+            bookingService.Create(newBooking);
+        }
+
+        public void RemoveBooking(Booking booking)
+        {
+            BookingMethods bookingService = new BookingMethods();
+
+            var removedBooking = new Domain.Booking
+            {
+                Id = booking.Id,
+                CarId = booking.CarId,
+                CustomerId = booking.CustomerId,
+                FromDate = booking.FromDate,
+                ToDate = booking.ToDate,
+                IsReturned = booking.IsReturned
+            };
+            bookingService.Remove(removedBooking);
+        }
     }
 }
