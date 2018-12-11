@@ -49,5 +49,38 @@ namespace CarRentalWCFService
 
             customerService.Add(newCustomer);
         }
+
+        public void RemoveCustomer(Customer customer)
+        {
+            CustomerMethods customerService = new CustomerMethods();
+
+            var removedCustomer = new Domain.Customer
+            {
+                Id = customer.Id,
+                Firstname = customer.Firstname,
+                Lastname = customer.Lastname,
+                Telephone = customer.Telephone,
+                Email = customer.Email
+            };
+            customerService.Remove(removedCustomer);
+        }
+
+        public void UpdateCustomer(Customer customer)
+        {
+            var customerService = new CustomerMethods();
+
+            var newCustomer = new Domain.Customer
+            {
+                Id = customer.Id,
+                Firstname = customer.Firstname,
+                Lastname = customer.Lastname,
+                Telephone = customer.Telephone,
+                Email = customer.Email
+            };
+
+            customerService.Update(newCustomer);
+        }
+
+
     }
 }

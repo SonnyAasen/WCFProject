@@ -12,6 +12,7 @@ namespace CarRentalWCFService
     [ServiceContract]
     public interface IRestService
     {
+        // complicated to request because of JSON Date formats
         [OperationContract]
         [WebInvoke(Method = "POST",
             UriTemplate = "GetAvailableCarsByDates",
@@ -20,6 +21,7 @@ namespace CarRentalWCFService
             ResponseFormat = WebMessageFormat.Json)]
         List<int> GetAvailableCarsByDates(DateTime fromDate, DateTime toDate);
 
+        // an easy GET example to make sure REST API is working
         [OperationContract]
         [WebGet(UriTemplate = "GetAllCars",
             BodyStyle = WebMessageBodyStyle.Wrapped,
