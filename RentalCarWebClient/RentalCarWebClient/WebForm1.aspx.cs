@@ -35,5 +35,20 @@ namespace RentalCarWebClient
             CarService.CarServiceClient client = new CarService.CarServiceClient("BasicHttpBinding_ICarService");
             client.AddCar(car);
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            CarService.Customer customer = new CarService.Customer
+            {
+                Id = Convert.ToInt32(TextBox7.Text),
+                Firstname = TextBox8.Text,
+                Lastname = TextBox9.Text,
+                Telephone = TextBox10.Text,
+                Email = TextBox11.Text
+            };
+
+            CarService.CarServiceClient client = new CarService.CarServiceClient("BasicHttpBinding_ICarService");
+            client.AddCustomer(customer);
+        }
     }
 }

@@ -122,6 +122,115 @@ namespace RentalCarWebClient.CarService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Customer", Namespace="http://schemas.datacontract.org/2004/07/CarRentalWCFService")]
+    [System.SerializableAttribute()]
+    public partial class Customer : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstnameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastnameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TelephoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public string Firstname {
+            get {
+                return this.FirstnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstnameField, value) != true)) {
+                    this.FirstnameField = value;
+                    this.RaisePropertyChanged("Firstname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public string Lastname {
+            get {
+                return this.LastnameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastnameField, value) != true)) {
+                    this.LastnameField = value;
+                    this.RaisePropertyChanged("Lastname");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public string Telephone {
+            get {
+                return this.TelephoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TelephoneField, value) != true)) {
+                    this.TelephoneField = value;
+                    this.RaisePropertyChanged("Telephone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CarService.ICarService")]
     public interface ICarService {
@@ -137,6 +246,12 @@ namespace RentalCarWebClient.CarService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarService/AddCar", ReplyAction="http://tempuri.org/ICarService/AddCarResponse")]
         System.Threading.Tasks.Task AddCarAsync(RentalCarWebClient.CarService.Car car);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarService/AddCustomer", ReplyAction="http://tempuri.org/ICarService/AddCustomerResponse")]
+        void AddCustomer(RentalCarWebClient.CarService.Customer customer);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarService/AddCustomer", ReplyAction="http://tempuri.org/ICarService/AddCustomerResponse")]
+        System.Threading.Tasks.Task AddCustomerAsync(RentalCarWebClient.CarService.Customer customer);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -180,6 +295,14 @@ namespace RentalCarWebClient.CarService {
         
         public System.Threading.Tasks.Task AddCarAsync(RentalCarWebClient.CarService.Car car) {
             return base.Channel.AddCarAsync(car);
+        }
+        
+        public void AddCustomer(RentalCarWebClient.CarService.Customer customer) {
+            base.Channel.AddCustomer(customer);
+        }
+        
+        public System.Threading.Tasks.Task AddCustomerAsync(RentalCarWebClient.CarService.Customer customer) {
+            return base.Channel.AddCustomerAsync(customer);
         }
     }
 }

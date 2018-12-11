@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9df0a733-3f72-405b-82bb-e91dfc3d9ec3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="63c6ddb6-8930-4164-866f-820bcbca66cd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:8080" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="b914c8cc-34cf-4866-8e81-adcb2bc0bd79" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd2" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="5cd99006-0401-4bc6-b1a4-2ab552599d5d" SourceId="1" SourceUrl="http://localhost:8080/?disco" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="a1f38d07-8b3d-403e-91f6-ca07c65d3ea3" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd0" />
-    <MetadataFile FileName="CarService.wsdl" MetadataType="Wsdl" ID="03436dc6-f90b-4e18-ac11-874e3973cd42" SourceId="1" SourceUrl="http://localhost:8080/?wsdl" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="3efb3676-be30-484e-88d0-f4362c6b7768" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd1" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="49297645-b258-4a06-80f6-d22e062b3abb" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="83ed8027-ab59-4e48-b94e-4026690dff20" SourceId="1" SourceUrl="http://localhost:8080/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="c49f106b-7df0-490c-8638-f2fa576f1f17" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd0" />
+    <MetadataFile FileName="CarService.wsdl" MetadataType="Wsdl" ID="dadfa556-5ef9-4f97-87b4-afbcf66968b3" SourceId="1" SourceUrl="http://localhost:8080/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="b91e2c86-a129-4fc5-8596-86f91901f93c" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

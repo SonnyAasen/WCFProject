@@ -73,9 +73,6 @@
     <None Include="Connected Services\CarService\item.disco" />
     <None Include="Connected Services\CarService\configuration91.svcinfo" />
     <None Include="Connected Services\CarService\configuration.svcinfo" />
-    <None Include="Connected Services\CarService\item2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\CarService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -103,6 +100,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\CarService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CarService\item2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />

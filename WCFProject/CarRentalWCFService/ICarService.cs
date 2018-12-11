@@ -16,5 +16,8 @@ namespace CarRentalWCFService
 
         [OperationContract]
         void AddCar(Car car);
+
+        [OperationContract]
+        void AddCustomer(Customer customer);
     }
 }

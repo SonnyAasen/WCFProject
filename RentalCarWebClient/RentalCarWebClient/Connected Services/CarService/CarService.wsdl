@@ -48,6 +48,12 @@
   <wsdl:message name="ICarService_AddCar_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddCarResponse" />
   </wsdl:message>
+  <wsdl:message name="ICarService_AddCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_AddCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
   <wsdl:portType name="ICarService">
     <wsdl:operation name="RemoveCar">
       <wsdl:input wsaw:Action="http://tempuri.org/ICarService/RemoveCar" message="tns:ICarService_RemoveCar_InputMessage" />
@@ -56,6 +62,10 @@
     <wsdl:operation name="AddCar">
       <wsdl:input wsaw:Action="http://tempuri.org/ICarService/AddCar" message="tns:ICarService_AddCar_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICarService/AddCarResponse" message="tns:ICarService_AddCar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/AddCustomer" message="tns:ICarService_AddCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/AddCustomerResponse" message="tns:ICarService_AddCustomer_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICarService" type="tns:ICarService">
@@ -71,6 +81,15 @@
     </wsdl:operation>
     <wsdl:operation name="AddCar">
       <soap:operation soapAction="http://tempuri.org/ICarService/AddCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap:operation soapAction="http://tempuri.org/ICarService/AddCustomer" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -100,6 +119,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/AddCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="CarService">
     <wsdl:port name="BasicHttpBinding_ICarService" binding="tns:BasicHttpBinding_ICarService">
@@ -110,7 +138,7 @@
       <wsa10:EndpointReference>
         <wsa10:Address>net.tcp://localhost:8090/CarService</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
-          <Upn>LAPTOP-BTCG2JO8\Sonny</Upn>
+          <Upn>DESKTOP-52LEU1I\Sonny</Upn>
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>
