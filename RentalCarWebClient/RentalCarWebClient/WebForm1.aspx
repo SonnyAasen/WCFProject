@@ -18,6 +18,7 @@ Inherits="RentalCarWebClient.WebForm1" %>
  <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
  <asp:Button ID="Button1" runat="server" Text="Remove Car"
 OnClick="Button1_Click" />
+ &nbsp;
  </td>
  </tr>
      <tr>
