@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Net.Security;
 
 namespace CarRentalWCFService
 {
@@ -20,10 +21,10 @@ namespace CarRentalWCFService
         [OperationContract]
         void AddCustomer(Customer customer);
 
-        [OperationContract]
+        [OperationContract(ProtectionLevel = ProtectionLevel.Sign)]
         void RemoveCustomer(Customer customer);
 
-        [OperationContract]
+        [OperationContract(ProtectionLevel = ProtectionLevel.EncryptAndSign)]
         void UpdateCustomer(Customer customer);
 
         [OperationContract]
