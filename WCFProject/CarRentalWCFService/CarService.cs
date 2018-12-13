@@ -18,7 +18,7 @@ namespace CarRentalWCFService
             carService.Remove(RegNr);
         }
 
-        public void AddCar(Car car)
+        public void AddCar(CarInfo car)
         {
             var carService = new CarMethods();
 
@@ -32,6 +32,41 @@ namespace CarRentalWCFService
             };
 
             carService.Add(newCar);
+        }
+
+        public List<CarInfo> GetCarsByIds(CarRequest request)
+        {
+            if(request.LicenseKey != "Passcode")
+            {
+                throw new FaultException("Wrong License Key");
+            }
+
+            CarMethods carService = new CarMethods();
+
+            var tempCarList = carService.GetById(request.CarIds);
+
+            var carList = new List<Car>();
+
+            foreach (Domain.Car c in tempCarList)
+            {
+                carList.Add(new Car
+                {
+                    Id = c.Id,
+                    Brand = c.Brand,
+                    Model = c.Model,
+                    Year = c.Year,
+                    RegNr = c.RegNr
+                });
+            }
+
+            var carListResult = new List<CarInfo>();
+
+            foreach(Car c in carList)
+            {
+                carListResult.Add(new CarInfo(c));
+            }
+            
+            return carListResult;
         }
 
         public void AddCustomer(Customer customer)
@@ -114,5 +149,7 @@ namespace CarRentalWCFService
             };
             bookingService.Remove(removedBooking);
         }
+
+        
     }
 }
